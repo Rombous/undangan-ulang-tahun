@@ -1,0 +1,109 @@
+:root{
+    --aqua: #6EACDA;
+    --bg-color: #021526;
+    --shadow: 0 2px 2px rgb{0 0 0 / 0,5};
+}
+
+body {
+    font-size: 1.4rem;
+    font-family: "Shantell Sans", sans-serif;
+    min-height: 2000px;
+}
+
+.hero ::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero {
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero h1,.hero h4, .hero p{
+    text-shadow: var(--shadow);
+}
+.hero h1 {
+    font-family: "Srisakdi", system-ui;
+    font-size: 6rem;
+}
+
+.hero p {
+    font-size: 2rem;
+}
+
+.hero a {
+    color: var(--aqua);
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+    color: white;
+    background-color: var(--aqua);
+}
+
+.mynavbar {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+    font-family: "Srisakdi", system-ui;
+    font-size: 3.2rem;
+    font-weight: bold;
+
+}
+
+.mynavbar .nav-link{
+    font-family: "Shantell Sans", sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.mynavbar .navbar-brand {
+    font-style:bold;
+}
+
+.home {
+    background: rgb(255,206,216);
+    background: radial-gradient(circle, rgba(255,206,216,1) 22%, rgba(174,181,255,1) 89%);
+    background-size: cover;
+    min-height: 100vh ;
+    margin-top: -6.3rem;
+    padding-top: 15rem;
+}
+/* Media Query */
+@media (max-width: 992px){
+    html {
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 768px){
+    html {
+        font-size: 65%;
+    }
+
+    .simply-countdown > .simply-section {
+        padding: 40px;
+    }
+
+    .mynavbar .nav-link{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px){
+    html {
+        font-size: 60%;
+    }
+}
